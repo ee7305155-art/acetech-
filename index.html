@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acetechgadget | Phones & Accessories</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <nav class="nav container">
+    <a class="logo" href="#"><span>▯</span> Acetech<span>gadget</span></a>
+    <div class="search"><input id="search" placeholder="Search for phones, brands, or models..."><button onclick="searchProducts()">⌕</button></div>
+    <div class="nav-actions"><a href="#phones">Phones</a><a href="#cart">Cart <b id="cartCount">0</b></a></div>
+  </nav>
+  <div class="subnav container"><a class="active" href="#">Home</a><a href="#phones">Phones</a><a href="#accessories">Accessories</a><a href="#about">About Us</a><a href="#contact">Contact</a><span>🇳🇬 We deliver nationwide in Nigeria</span></div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div><p class="eyebrow">LATEST PHONES. BEST PRICES.</p><h1>Your Next Phone<br><strong>Is Here</strong></h1>
+    <p class="lead">Shop quality Itel, iPhone and Samsung phones at competitive prices. Simple shopping, trusted service and delivery across Nigeria.</p>
+    <a class="btn" href="#phones">Shop Now →</a></div>
+    <div class="hero-phones">
+      <div class="phone itel">itel</div><div class="phone iphone"></div><div class="phone samsung">SAMSUNG</div>
+    </div>
+  </div>
+</section>
+
+<section class="categories container">
+  <button onclick="filterBrand('all')">▯<small>All Phones</small></button>
+  <button onclick="filterBrand('Itel')">itel<small>Itel Phones</small></button>
+  <button onclick="filterBrand('iPhone')"><small>iPhone</small></button>
+  <button onclick="filterBrand('Samsung')">S<small>Samsung</small></button>
+  <button>◈<small>Accessories</small></button>
+  <button>◌<small>Audio</small></button>
+</section>
+
+<section id="phones" class="container products-section">
+  <div class="section-head"><div><h2>Featured Phones</h2><p>Popular picks from Itel, iPhone and Samsung.</p></div><button onclick="filterBrand('all')">View All Phones →</button></div>
+  <div id="products" class="products"></div>
+</section>
+
+<section id="about" class="trust">
+  <div class="container"><h2>Why Shop With Acetechgadget?</h2>
+    <div class="trust-grid"><div><strong>✓</strong><b>Original Phones</b><span>Genuine and tested devices</span></div><div><strong>▣</strong><b>Fast Delivery</b><span>Across Nigeria</span></div><div><strong>✓</strong><b>Secure Payments</b><span>Pay with confidence</span></div><div><strong>◉</strong><b>Friendly Support</b><span>We're here to help</span></div></div>
+  </div>
+</section>
+</main>
+
+<footer id="contact"><div class="container footer-grid"><div><a class="logo" href="#"><span>▯</span> Acetech<span>gadget</span></a><p>Quality phones and accessories for Nigeria.</p></div>
+<div><h4>Quick Links</h4><a href="#">Home</a><a href="#phones">Phones</a><a href="#accessories">Accessories</a><a href="#about">About Us</a></div>
+<div><h4>Popular Brands</h4><a onclick="filterBrand('Itel')">Itel</a><a onclick="filterBrand('iPhone')">iPhone</a><a onclick="filterBrand('Samsung')">Samsung</a></div>
+<div><h4>Contact</h4><p>📞 0800-ACETECH</p><p>🇳🇬 Nationwide delivery</p></div></div>
+<div class="copyright">© 2026 Acetechgadget. All rights reserved.</div></footer>
+
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
